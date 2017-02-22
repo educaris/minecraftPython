@@ -2,7 +2,7 @@ import mcpi.minecraft as minecraft
 import mcpi.block as block
 from time import sleep
 mc = minecraft.Minecraft.create()
-mc.postToChat("Welcome to the Lava Trap")
+mc.postToChat("Welkom bij Lava Val!!")
 
 sleep(3)
 pos = mc.player.getTilePos()
@@ -15,8 +15,8 @@ mc.setBlocks(pos.x - 5, pos.y - 1, pos.z - 5,
 
 mc.setBlock(pos.x, pos.y - 1, pos.z, block.DIAMOND_BLOCK.id)
 
-mc.postToChat("Get Ready")
-mc.postToChat("Blocks under you will keep disappearing")
+mc.postToChat("Klaar voor de start!")
+mc.postToChat("De blokken onder je voeten gaan verdwijnen")
 sleep(3)
 mc.postToChat("Go")
 gameover = False
